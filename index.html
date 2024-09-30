@@ -11,10 +11,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet"> -->
 </head>
 
-<body>
+<body id="jogo-taz">
     <header class="header">
-
+        <h2 class="titulo-header galindo-titulo">Acerte o taz</h2>
+        <img src="./images/taz.png" alt="foto do taz">
     </header>
+    <div class="info-game galindo-regular">
+        <label for="vidas">Vidas</label>
+        <input type="number" disabled name="vidas" id="vidas">
+
+        <label for="tempo">Tempo</label>
+        <input type="number" disabled name="tempo" id="tempo">
+    </div>
+
+    <main class="ambiente-game">
+        <div class="intro-game">
+            <h2 class="placar-titulo galindo-titulo">Placar</h2>
+            <div class="placar-game galindo-regular">
+                <label for="taz">Taz</label>
+                <input type="number" disabled name="taz" id="taz">
+
+                <label for="jogador">Jogador</label>
+                <input type="number" disabled name="jogador" id="jogador">
+            </div>
+        </div>
+        <section class="game galindo-regular">
+            <div class="quadro-taz">1</div>
+            <div class="quadro-taz">2</div>
+            <div class="quadro-taz">3</div>
+            <div class="quadro-taz">4</div>
+            <div class="quadro-taz">5</div>
+            <div class="quadro-taz">6</div>
+            <div class="quadro-taz">7</div>
+            <div class="quadro-taz">8</div>
+            <div class="quadro-taz">9</div>
+            <div class="quadro-taz">10</div>
+            <div class="quadro-taz">11</div>
+            <div class="quadro-taz">12</div>
+        </section>
+    </main>
 
 
     <script src="scripts/engine.js"></script>

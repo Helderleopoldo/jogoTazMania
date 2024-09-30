@@ -1,8 +1,14 @@
 /* reset de margens e paddings */
 @import url(./reset.css);
 
+/* defini estrutura do body */
+@import url(./grid-areas.css);
+
 /* tipográfia */
 @import url(./tipografia.css);
 
 /* cores */
 @import url(./cores.css);
+
+/* Estilização do jogo */
+@import url(./home.css);

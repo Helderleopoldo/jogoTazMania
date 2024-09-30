@@ -1,0 +1,27 @@
+#jogo-taz {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: "header header "
+        "info-game info-game"
+        "main main "
+        "game game";
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    grid-area: header;
+}
+
+.info-game {
+    grid-area: info-game;
+}
+
+.ambiente-game {
+    grid-area: main;
+}
+
+.game {
+    grid-area: game;
+}

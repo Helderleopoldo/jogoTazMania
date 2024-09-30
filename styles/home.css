@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 32px;
+    margin-bottom: 60px;
+}
+
+.header img {
+    width: 100px;
+}
+
+.info-game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.info-game label {
+    margin-left: 200px;
+}
+
+.info-game input {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+
+.ambiente-game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-self: center;
+}
