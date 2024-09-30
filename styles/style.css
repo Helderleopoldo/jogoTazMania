@@ -1,0 +1,8 @@
+/* reset de margens e paddings */
+@import url(./reset.css);
+
+/* tipográfia */
+@import url(./tipografia.css);
+
+/* cores */
+@import url(./cores.css);
