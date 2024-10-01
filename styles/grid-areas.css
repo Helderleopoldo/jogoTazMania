@@ -4,10 +4,10 @@
     grid-auto-rows: auto;
     grid-template-areas: "header header "
         "info-game info-game"
-        "main main "
-        "game game";
+        "main main";
     align-items: center;
     justify-content: center;
+    background-color: #efefef;
 }
 
 .header {
@@ -16,6 +16,10 @@
 
 .info-game {
     grid-area: info-game;
+}
+
+.intro-game {
+    grid-area: intro-game;
 }
 
 .ambiente-game {
