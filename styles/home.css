@@ -3,12 +3,14 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
-    margin-top: 32px;
+    padding-top: 20px;
     margin-bottom: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7;
 }
 
 .header img {
-    width: 3.5rem;
+    width: 8rem;
 }
 
 .info-game,
@@ -17,7 +19,7 @@
     align-items: center;
     justify-content: center;
     gap: 60px;
-    padding: 12px 24px;
+    padding: 8px 24px;
 }
 
 .info-game input,
@@ -36,18 +38,31 @@
 .game {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 70%;
+    max-width: max-content;
     padding: 20px;
     gap: 12px;
     margin-bottom: 12px;
 }
 
 .quadro-taz {
-    width: 200px;
-    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    width: 200px;
+    height: 200px;
     padding: 12px;
+    background-color: #fefae0;
+    border-radius: 4px;
+}
+
+.target {
+    background-image: url(../images/taz-aparece-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.target-hit {
+    background-image: url(../images/TazCrying.png);
+    background-size: cover;
+    background-position: center;
 }
