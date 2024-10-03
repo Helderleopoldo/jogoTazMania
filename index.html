@@ -12,31 +12,28 @@
 </head>
 
 <body id="jogo-taz">
+
     <header class="header">
         <h2 class="titulo-header galindo-titulo">Acerte o taz</h2>
-        <img src="./images/taz.jpg" alt="foto do taz">
+        <img src="./images/logo.png" alt="foto do taz">
     </header>
-    <div class="info-game galindo-regular">
-        <div>
-            <label for="vidas">Vidas</label>
-            <input type="number" disabled name="vidas" id="vidas">
-        </div>
-        <div>
-            <label for="tempo">Tempo</label>
-            <input type="number" disabled name="tempo" id="tempo">
-        </div>
-    </div>
 
     <main class="ambiente-game">
+        <div class="info-game galindo-regular">
+            <div>
+                <label for="vidas">Vidas: <span>3</span></label>
+            </div>
+            <div>
+                <label for="tempo">Tempo: <span> 60 </span> </label>
+            </div>
+        </div>
         <div class="placar-game galindo-regular">
             <h2 class="placar-titulo galindo-titulo">Placar :</h2>
             <div>
-                <label for="taz">Taz</label>
-                <input type="number" disabled name="taz" id="taz">
+                <label for="taz">Taz: <span>0</span></label>
             </div>
             <div>
-                <label for="jogador">Jogador</label>
-                <input type="number" disabled name="jogador" id="jogador">
+                <label for="jogador">Jogador: <span>0</span></label>
             </div>
         </div>
         <section class="game galindo-regular">
@@ -44,9 +41,9 @@
             <div class="quadro-taz">2</div>
             <div class="quadro-taz">3</div>
             <div class="quadro-taz">4</div>
-            <div class=" target quadro-taz">5</div>
+            <div class="quadro-taz">5</div>
             <div class="quadro-taz">6</div>
-            <div class=" target-hit quadro-taz">7</div>
+            <div class="quadro-taz">7</div>
             <div class="quadro-taz">8</div>
             <div class="quadro-taz">9</div>
             <div class="quadro-taz">10</div>
@@ -54,10 +51,6 @@
             <div class="quadro-taz">12</div>
         </section>
     </main>
-
-    <footer class="footer"></footer>
-
-
     <script src="scripts/engine.js"></script>
 </body>
 
