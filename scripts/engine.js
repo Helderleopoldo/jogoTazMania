@@ -14,7 +14,7 @@ const state = {
     },
     actions: {
         timerId: null,
-        countdownTimer: setInterval(countdown, 1000)
+        countdownTimer: setInterval(countdown, 300)
     },
 };
 
@@ -41,6 +41,7 @@ function hitEnemy() {
                 state.values.hitPosition = null
             } else if (square.id != state.values.hitPosition) {
                 state.views.scoreEnemy.textContent++
+                playSound("errou")
             }
         })
     })
@@ -49,8 +50,10 @@ function countdown() {
     state.values.currentTime--
     state.views.time.textContent = state.values.currentTime
     if (state.values.currentTime == 0) {
-        clearInterval(state.actions.countdownTimer)
         alert("Game Over, sua pontuação é: " + state.views.scorePlayer.textContent)
+        clearInterval(state.actions.countdownTimer)
+        state.views.scoreEnemy.textContent = 0
+        state.views.scorePlayer.textContent = 0
     }
 }
 function playSound(audioName) {
