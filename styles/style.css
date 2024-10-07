@@ -7,10 +7,5 @@
 /* tipográfia */
 @import url(./tipografia.css);
 
-/* cores */
-@import url(./cores.css);
-
 /* Estilização do jogo */
 @import url(./home.css);
-
-@import url(./footer.css);

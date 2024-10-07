@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerte o Taz</title>
+    <title>Hit the Taz</title>
     <link rel="stylesheet" href="styles/style.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,41 +14,41 @@
 <body id="jogo-taz">
 
     <header class="header">
-        <h2 class="titulo-header galindo-titulo">Acerte o taz</h2>
+        <h2 class="titulo-header galindo-titulo">Hit the Taz</h2>
         <img src="./images/logo.png" alt="foto do taz">
     </header>
 
-    <main class="ambiente-game">
+    <main class="play-area">
         <div class="info-game galindo-regular">
             <div>
-                <label for="vidas">Vidas: <span>3</span></label>
+                <label for="lives">Lives: <span class="lives">3</span></label>
             </div>
             <div>
-                <label for="tempo">Tempo: <span> 60 </span> </label>
+                <label for="time">Time: <span class="time"> </span> </label>
             </div>
         </div>
-        <div class="placar-game galindo-regular">
-            <h2 class="placar-titulo galindo-titulo">Placar :</h2>
+        <div class="scoreboard galindo-regular">
+            <h2 class="galindo-titulo">Score :</h2>
             <div>
-                <label for="taz">Taz: <span>0</span></label>
+                <label for="taz">Taz: <span class="score-enemy">0</span></label>
             </div>
             <div>
-                <label for="jogador">Jogador: <span>0</span></label>
+                <label for="player">Player: <span class="score-player">0</span></label>
             </div>
         </div>
         <section class="game galindo-regular">
-            <div class="quadro-taz">1</div>
-            <div class="quadro-taz">2</div>
-            <div class="quadro-taz">3</div>
-            <div class="quadro-taz">4</div>
-            <div class="quadro-taz">5</div>
-            <div class="quadro-taz">6</div>
-            <div class="quadro-taz">7</div>
-            <div class="quadro-taz">8</div>
-            <div class="quadro-taz">9</div>
-            <div class="quadro-taz">10</div>
-            <div class="quadro-taz">11</div>
-            <div class="quadro-taz">12</div>
+            <div class="square" id="1">1</div>
+            <div class="square" id="2">2</div>
+            <div class="square" id="3">3</div>
+            <div class="square" id="4">4</div>
+            <div class="square" id="5">5</div>
+            <div class="square" id="6">6</div>
+            <div class="square" id="7">7</div>
+            <div class="square" id="8">8</div>
+            <div class="square" id="9">9</div>
+            <div class="square" id="10">10</div>
+            <div class="square" id="11">11</div>
+            <div class="square" id="12">12</div>
         </section>
     </main>
     <script src="scripts/engine.js"></script>
