@@ -14,7 +14,7 @@ const state = {
     },
     actions: {
         timerId: null,
-        countdownTimer: setInterval(countdown, 300)
+        countdownTimer: setInterval(countdown, 1000)
     },
 };
 
