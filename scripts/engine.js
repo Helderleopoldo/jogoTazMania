@@ -52,8 +52,7 @@ function countdown() {
     if (state.values.currentTime == 0) {
         alert("Game Over, sua pontuação é: " + state.views.scorePlayer.textContent)
         clearInterval(state.actions.countdownTimer)
-        state.views.scoreEnemy.textContent = 0
-        state.views.scorePlayer.textContent = 0
+        window.location.reload()
     }
 }
 function playSound(audioName) {
